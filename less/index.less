@@ -47,13 +47,76 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Girassol&display=swap');
+@headFont: 'Girassol', cursive;
+@pFont: 'Crimson Text', serif;
+
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	font-size: 62.5%;
+	box-sizing: border-box;
+	
 }
 
+
+.all {
+	padding: 4px;
+	border: 8px solid black;
+}
+img {
+	padding: 20px;
+	border: 2px solid gold;
+	margin-bottom: 30px;
+}
 html, body {
-    height: 100%;
+	padding: 3px 90px;
+	height: 100%;
+	font-family: @pFont;
+	font-size: 1.2rem;
+    letter-spacing: 1px;
+	background-color: rgb(146, 199, 130);
 }
+h1, h2, h3, h4, h5 {
+	font-family: @headFont;
+	padding: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+h1, {
+	width: 80%;
+	font-size: 2.6rem;
+}
+h2 {
+	font-size: 2rem;
+}
+h3 {
+	font-size: 1.8;
+}
+.work section, footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 10% 10%;
 
+}
+header {
+	padding: 10%;
+	background-color: rgb(69, 134, 69);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+li {
+	margin: 0 60px;
+	list-style-type: circle;
+}
+.about {
+	margin: 0 20%;
+}
+p {
+
+}
