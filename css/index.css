@@ -147,16 +147,28 @@ table {
   box-sizing: border-box;
 }
 .all {
-  padding: 4px;
-  border: 8px solid black;
+  padding: 14px;
+  background-color: lightgrey;
+  border-radius: 5%;
+  border: 2px solid grey;
 }
-img {
+nav {
+  text-decoration: none;
+  color: dodgerblue;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+header img {
+  background-color: #7a2020;
   padding: 20px;
-  border: 2px solid gold;
-  margin-bottom: 30px;
+  border: 4px solid #d6b601;
+  margin: 14%;
+  box-shadow: 0 0 40px black;
 }
 html,
 body {
+  margin-top: 25px;
   padding: 3px 90px;
   height: 100%;
   font-family: 'Crimson Text', serif;
@@ -170,40 +182,93 @@ h3,
 h4,
 h5 {
   font-family: 'Girassol', cursive;
-  padding: 20px;
+  padding: 0 20px;
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
 h1 {
-  width: 80%;
+  padding: 8% 17%;
+  height: 240px;
+  box-shadow: 0 0 3px gold, 0 0 20px 15px #004100;
+  color: #aa993a;
+  text-shadow: 0 0 20px black;
+  width: 85%;
+  border-radius: 35%;
   font-size: 2.6rem;
+  background-color: #227022;
 }
 h2 {
   font-size: 2rem;
 }
 h3 {
-  font-size: 1.8;
+  font-size: 1.8rem;
+  margin: 5%;
 }
-.work section,
-footer {
+#work section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10% 10%;
+  margin: 3% 10%;
+  box-shadow: 0 0 20px black;
+  border-radius: 15px;
+  background-color: #458645;
+  padding: 0 10% 5% 10%;
+  border: 2px solid grey;
 }
 header {
-  padding: 10%;
+  padding: 5% 16%;
+  box-shadow: 0 0 20px black;
   background-color: #458645;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 8%;
+  border-radius: 10%;
+  border: 2px solid grey;
+}
+.workhistorytitle {
+  border-top: 1px solid black;
+  margin: 8%;
+  padding-top: 8%;
+}
+.skills {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: space-around;
+  padding-left: 20px;
+}
+.dates {
+  padding: 5%;
 }
 li {
   margin: 0 60px;
   list-style-type: circle;
 }
-.about {
-  margin: 0 20%;
+#about {
+  padding: 5%;
+  background-color: transparent;
+  box-shadow: 0 0 15px black;
+  margin: 0 10% 6% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+#about img {
+  border: 8px solid white;
+  border-bottom: 46px solid white;
+  transform: rotate(10deg);
+  box-shadow: 0 0 20px black;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 10%;
+  border-top: 2px solid grey;
 }
