@@ -1,1 +1,274 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Fonts */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url(https://fonts.gstatic.com/s/crimsontext/v10/wlp2gwHKFkZgtmSR3NB0oRJfbwhW.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Girassol';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Girassol Regular'), local('Girassol-Regular'), url(https://fonts.gstatic.com/s/girassol/v1/JTUUjIo_-DK48laaNB9KxW4.ttf) format('truetype');
+}
+/* Set every element's box-sizing to border-box */
+* {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+.all {
+  padding: 14px;
+  background-color: lightgrey;
+  border-radius: 5%;
+  border: 2px solid grey;
+}
+nav {
+  text-decoration: none;
+  color: dodgerblue;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+header img {
+  background-color: #7a2020;
+  padding: 20px;
+  border: 4px solid #d6b601;
+  margin: 14%;
+  box-shadow: 0 0 40px black;
+}
+html,
+body {
+  margin-top: 25px;
+  padding: 3px 90px;
+  height: 100%;
+  font-family: 'Crimson Text', serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  background-color: #92c782;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Girassol', cursive;
+  padding: 0 20px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+h1 {
+  padding: 8% 17%;
+  height: 240px;
+  box-shadow: 0 0 3px gold, 0 0 20px 15px #004100;
+  color: #aa993a;
+  text-shadow: 0 0 20px black;
+  width: 85%;
+  border-radius: 35%;
+  font-size: 2.6rem;
+  background-color: #227022;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.8rem;
+  margin: 5%;
+}
+#work section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 10%;
+  box-shadow: 0 0 20px black;
+  border-radius: 15px;
+  background-color: #458645;
+  padding: 0 10% 5% 10%;
+  border: 2px solid grey;
+}
+header {
+  padding: 5% 16%;
+  box-shadow: 0 0 20px black;
+  background-color: #458645;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8%;
+  border-radius: 10%;
+  border: 2px solid grey;
+}
+.workhistorytitle {
+  border-top: 1px solid black;
+  margin: 8%;
+  padding-top: 8%;
+}
+.skills {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: space-around;
+  padding-left: 20px;
+}
+.dates {
+  padding: 5%;
+}
+li {
+  margin: 0 60px;
+  list-style-type: circle;
+}
+#about {
+  padding: 5%;
+  background-color: transparent;
+  box-shadow: 0 0 15px black;
+  margin: 0 10% 6% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+#about img {
+  border: 8px solid white;
+  border-bottom: 46px solid white;
+  transform: rotate(10deg);
+  box-shadow: 0 0 20px black;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 10%;
+  border-top: 2px solid grey;
+}
